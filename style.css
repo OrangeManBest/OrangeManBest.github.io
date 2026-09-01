@@ -1,7 +1,4 @@
-/* ============================================================
-   Jasper Zhang · personal site
-   Plain HTML/CSS/JS. No frameworks.
-   ============================================================ */
+/* Jasper Zhang - personal site. Plain HTML/CSS/JS. No frameworks. */
 :root {
   --bg: #ffffff;
   --fg: #1b1f23;
@@ -25,8 +22,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   transition: background .2s ease, color .2s ease;
@@ -34,8 +30,6 @@ body {
 main { max-width: 52rem; margin: 0 auto; padding: 1rem 1.25rem 5rem; }
 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s ease; }
 a:hover { border-bottom-color: var(--accent); }
-
-/* ---- top bar ---- */
 .site-header {
   position: sticky; top: 0; z-index: 10;
   background: color-mix(in srgb, var(--bg) 82%, transparent);
@@ -50,8 +44,6 @@ a:hover { border-bottom-color: var(--accent); }
   transition: border-color .15s ease, color .15s ease;
 }
 .lang-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-/* ---- hero ---- */
 .hero { padding: 2.6rem 0 1.4rem; }
 .avatar {
   width: 134px; height: 134px; border-radius: 50%;
@@ -60,44 +52,30 @@ a:hover { border-bottom-color: var(--accent); }
 .name { font-size: 2.6rem; line-height: 1.15; font-weight: 800; letter-spacing: -.01em; }
 .subtitle { color: var(--muted); font-size: 1.15rem; margin-top: .15rem; }
 .tagline { margin-top: 1.1rem; font-size: 1.05rem; color: var(--muted); }
-.intro { margin-top: 1.4rem; max-width: 46rem; }
-
-/* ---- sections ---- */
+.bio { margin-top: 1.4rem; max-width: 46rem; color: var(--muted); font-size: .98rem; }
 .section { margin-top: 3rem; scroll-margin-top: 4rem; }
 .section-title {
   font-size: 1.08rem; font-weight: 700; letter-spacing: .02em;
   margin-bottom: 1.4rem; padding-bottom: .35rem; border-bottom: 2px solid var(--line);
 }
-.entry { list-style: none; margin-bottom: 1.9rem; }
-.timeline, .education, .honors { padding-left: 0; }
-.entry-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-.entry-org { font-weight: 700; }
-.entry-date { color: var(--muted); font-size: .85rem; white-space: nowrap; }
-.entry-role { font-size: 1rem; margin-top: .15rem; font-weight: 600; }
-.entry-desc { margin-top: .35rem; color: var(--muted); font-size: .95rem; }
-
-/* ---- skills ---- */
+.timeline-k { padding-left: 0; }
+.tl-row { margin-bottom: 1.4rem; line-height: 1.75; }
+.tl-year { font-weight: 700; color: var(--fg); margin-right: .35rem; }
 .skills { display: flex; flex-wrap: wrap; gap: .55rem; list-style: none; padding-left: 0; }
 .skills li {
   background: var(--chip-bg); border: 1px solid var(--line);
   border-radius: 999px; padding: .28rem .9rem; font-size: .9rem;
 }
-
-/* ---- honors & contact ---- */
-.honors li { margin-bottom: .55rem; }
+.honors { padding-left: 0; }
+.honors li { margin-bottom: .55rem; list-style: none; }
+.misc-text { color: var(--muted); font-size: .98rem; max-width: 46rem; }
 .contact-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 .contact-links a { display: inline-flex; align-items: center; gap: .4rem; }
-
-/* ---- footer ---- */
 footer {
   border-top: 1px solid var(--line); margin-top: 4rem;
   padding: 1.6rem 1.25rem 2.4rem; text-align: center;
   color: var(--muted); font-size: .85rem;
 }
-
-/* ---- responsive ---- */
 @media (max-width: 640px) {
   .name { font-size: 2rem; }
-  .entry-meta { flex-direction: column; gap: .05rem; }
-  .entry-date { white-space: normal; }
 }
