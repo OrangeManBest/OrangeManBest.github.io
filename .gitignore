@@ -1,0 +1,9 @@
+﻿# 原始照片不入库（avatar.jpg 是页面实际使用的副本）
+assets/Jasper-1.jpg
+assets/jasper-2.JPG
+
+# 构建/系统残留
+__pycache__/
+*.pyc
+.DS_Store
+

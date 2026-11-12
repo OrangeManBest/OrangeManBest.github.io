@@ -1,4 +1,4 @@
-/* Jasper Zhang · bilingual toggle (ZH ⇄ EN) */
+﻿/* Jasper Zhang · bilingual toggle (ZH ⇄ EN) */
 (function () {
   "use strict";
   var btn = document.getElementById("lang-toggle");
